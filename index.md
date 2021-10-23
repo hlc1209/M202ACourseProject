@@ -38,12 +38,7 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 
 
 
-# TEST
+# Abstract
 
-hfkjehkjshfkjhkjhkjhkjhdsfe
-
-
-```
-import numpy
-```
+Image recognition is an emerging field with varieties of applications spanning from disease diagnosis, facial recognition, monitoring systems, to simply entertainment and human machine interface. Years ago, machine learning algorithms were computation-demanding, which is a major roadblock for the delivery of image recognition service with lower-cost and low-power embedded system. As the performance, robustness, and the resouce-efficent techniques for machine learnings have been significantly improved over the years, the application of low-cost and high-performance device for human-device interaction becomes possible.
 
