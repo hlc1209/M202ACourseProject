@@ -44,3 +44,6 @@ Image recognition is an emerging field with varieties of applications spanning f
 
 The purpose of this project is to build a small-size and low-power real-time optical character recognition system based on Arduino Nano 33 BLE Sense and a touch screen, which is capable of recognizing characters written on the touch screen in real-time and send recognized characters to BLE enabled laptop/desktop as keyboard strokes. Inference of written characters is done on Arduino Nano 33 BLE Sense to enable the extendability of the whole system where recognized written characters are not limited to be used as keyboard strokes but rather any BLE-enable external devices. 
 
+# About & Contribution
+
+
