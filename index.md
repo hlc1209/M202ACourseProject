@@ -46,4 +46,47 @@ The purpose of this project is to build a small-size and low-power real-time opt
 
 # About & Contribution
 
+# Project Timeline
 
+## Week 1-2 (Oct. 4-17)
+
+* Research for project ideas with focus on human interface device (HID)
+* Form a team of 2 considering the scope and difficulty of the project.
+  
+## Week 3 (Oct. 18-24)
+
+* Create project website on Github and finish the section of abstract.
+* Discuss project idea and place order for necessary components.
+* Research into the user Manual and tutorial of the purchased touchscreen.
+
+## Week 4 (Oct. 25-31)
+
+* Finalize detailed project ideas and create timeline for the project. 
+* Analyze applications and review literatures that are similar to this project.
+* Start wiring and testing of the touchscreen.
+
+## Week 5 (Nov. 1-7)
+
+* Finish wiring and interfacing the touchscreen with Arduino Nano 33 BLE Sense.
+
+## Week 6 (Nov. 8-14)
+
+* Finish BLE connection between Arduino Nano 33 BLE Sense and PC with HID keystroke input.
+
+## Week 7-8 (Nov. 15-21)
+
+* Finish pruning, digitization, and model compression on ML model.
+* Implement the compressed ML model in Arduino Nano 33 BLE Sense. 
+* Resolve issues on timing and ensure the system meets the minimum requirement of real-time response.
+* Prepare a demo video and report as a progress update.
+
+## Week 9-10 (Nov. 22- Dec. 5)
+
+* Tune the and further compress the ML model to improve the performance on both accuracy and timing.
+* Debug issues found through testing.
+* Consider to make a 3D-printed case to package the system.
+
+## Week 11 (Dec. 6-11)
+* Evaluate the performance of the furnished system and compose the final report.
+* Update the project website with detail testing results, source code, and thorough documentation.
+* Prepare Zoom presentation. 
