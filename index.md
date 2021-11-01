@@ -19,33 +19,40 @@ The purpose of this project is to build a small-size and low-power real-time opt
 ## Week 3 (Oct. 18-24)
 
 * Create project website on Github and finish the section of abstract.
-* Discuss project idea and place order for necessary components.
-* Research into the user Manual and tutorial of the purchased touchscreen.
+* Discuss project idea and validate the feasibility.
+* Place order for necessary components.
+* Research into the user Manual and tutorial of the purchased components.
 
 ## Week 4 (Oct. 25-31)
 
 * Finalize detailed project ideas and create timeline for the project. 
 * Analyze applications and review literatures that are similar to this project.
 * Start wiring and testing of the touchscreen.
+* Start collecting datasets for DL model training and building the model architecture using PC.
 
 ## Week 5 (Nov. 1-7)
 
 * Finish wiring and interfacing the touchscreen with Arduino Nano 33 BLE Sense.
+* Train the DL model using GPU and keep adjusting the architecture to obtain better performance with smaller model sizes.
 
 ## Week 6 (Nov. 8-14)
 
 * Finish BLE connection between Arduino Nano 33 BLE Sense and PC with HID keystroke input.
+* Attempt to run trained models on Arduino Nano 33 BLE Sense and profiling the performance to adjust the architecture.
 
 ## Week 7-8 (Nov. 15-21)
 
 * Finish pruning, digitization, and model compression on ML model.
 * Implement the compressed ML model in Arduino Nano 33 BLE Sense. 
+* Achieve real-time DL model inference on Arduino Nano 33 BLE Sense with decent recognition accuracy.
+* Achieve a basic graphical user interface, including handwriting input area and candidate words area.
 * Resolve issues on timing and ensure the system meets the minimum requirement of real-time response.
 * Prepare a demo video and report as a progress update.
 
 ## Week 9-10 (Nov. 22- Dec. 5)
 
 * Tune the and further compress the ML model to improve the performance on both accuracy and timing.
+* Add more functions to the GUI to enable more interesting interactions.
 * Debug issues found through testing.
 * Consider to make a 3D-printed case to package the system.
 
