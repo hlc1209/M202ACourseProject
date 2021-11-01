@@ -74,6 +74,8 @@ An article closely related to our project is "Real-Time Handwritten Letters Reco
 
 While this article demonstrates the basic feasibility of our project, the plan for our project goes beyond the level demonstrated in this article.
 
+In this article, the described the Raspberry Pi 3 which comes with 1GB RAM and 1.2 GHz main clock speed, we are aiming to reproduce a system with similar performance using Arduino Nano 33 BLE Sense which has only 256KB RAM and 64 MHz main clock speed. In this paper, authors were able to achieve an accuracy of 93.4% with a response time of 21.9 ms. Such high performance in both accuracy and response time is at the cost of a more expensive and power-consuming device. However, we notice that the machine learning models implemented in Raspberry Pi 3 are not optimized using any of the emerging model compression techniques such as pruning and quantization. Therefore, it is feasible to achieve similar performance on a less power device with a much more compressed model with reasonable cost in accuracy and response time. 
+
 ### Character recognition
 
 ### Hardware 
