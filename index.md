@@ -76,6 +76,8 @@ While this article demonstrates the basic feasibility of our project, the plan f
 
 In this article, the described method is implemented using the Raspberry Pi 3 which comes with 1GB RAM and 1.2 GHz main clock speed, we are aiming to reproduce a system with similar performance using Arduino Nano 33 BLE Sense which has only 256KB RAM and 64 MHz main clock speed. In this paper, authors were able to achieve an accuracy of 93.4% with a response time of 21.9 ms. Such high performance in both accuracy and response time is at the cost of a more expensive and power-consuming device. However, we notice that the machine learning models implemented in Raspberry Pi 3 are not optimized using any of the emerging model compression techniques such as pruning and quantization. Therefore, it is feasible to achieve similar performance on a less power device with a much more compressed model with reasonable cost in accuracy and response time. 
 
+The proposed method in the article performance only one task, which simply outputs the inference of the handwritten character. Therefore, scheduling of different tasks would not be a problem in this desgin. In our anticipated system, we propose to extend the funtionality of the system to interact with external device throught BLE based on the inferenced of handwritten characters. In this context, two tasks exist simutaneously. One is the recognition of handwritten characters and the other one is the BLE service for the interface between devices. With the sporadic nature of the first task, the scheduling of these two events needs to be carefully evaluated from other sources as this article did not cover this topic.
+
 ### Character recognition
 
 ### Hardware 
