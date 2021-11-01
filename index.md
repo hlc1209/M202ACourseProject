@@ -61,6 +61,23 @@ The purpose of this project is to build a small-size and low-power real-time opt
 * Update the project website with detail testing results, source code, and thorough documentation.
 * Prepare Zoom presentation. 
 
+
+# Literature Analysis
+
+The key points to the success for our project are
+1. High accuracy real-time written character recognition using deep learning on a lower-cost and low-power embedded system.
+2. High-reliability low-latency HID devices emulation via BLE.
+3. Effective user interface design with continuous input and behavior customization capabilities.
+
+## Real-Time Handwritten Letters Recognition on an Embedded Computer Using ConvNets
+An article closely related to our project is "Real-Time Handwritten Letters Recognition on an Embedded Computer Using ConvNets" by D. Núñez Fernández and S. Hosseini. 
+
+While this article demonstrates the basic feasibility of our project, the plan for our project goes beyond the level demonstrated in this article.
+
+### Character recognition
+
+### Hardware 
+
 # References
 
 D. Núñez Fernández and S. Hosseini, "Real-Time Handwritten Letters Recognition on an Embedded Computer Using ConvNets," 2018 IEEE Sciences and Humanities International Research Conference (SHIRCON), 2018, pp. 1-4, doi: 10.1109/SHIRCON.2018.8592981.
