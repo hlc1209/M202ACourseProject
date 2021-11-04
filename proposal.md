@@ -10,13 +10,15 @@ To tackle the aforementioned problems, we propose to develop a low-cost and low-
 
 # 2. State of the Art & Its Limitations
 
+In 2018, 
+
 # 3. Novelty & Rationale
 
 Compatibility is the main aspect that makes our proposed device stand out from other touchscreen solutions avaiable in the market. Nowadays, handwritten recognition solutions either work on selected devices or at-least touchscreen enabled high-end electronics. Also, the handwritten recognition algorithm of these devices typical requires the support from powerful processors. Our envisioned systems is built-in with a small touchscreen to collect handwritten inputs and infer the written characters on chip before sending out the commands/keyboard strokes. Therefore, it would be able to accommodate any BLE enabled devices. Such features allow more extendability of the device. 
 
 # 4. Potential Impact
 
-For instances, rather than a handwritting-to-text converter, this device can be used as the input terminal of voice synthesizer for 
+If successfully made, this device could become a new type of human interface device that is compatible to any BLE enable devices not limited to high-end electronics like laptops and tablets. For instance, it could be used to recognize and convert user's writings to keyboard strokes to replace the functionality of a keyboard upon user's desire. Similarly, it could also become an input device of speech-synthesizer for speech impaired people. In short, such device brings in a new way to interface electronics with great compatibility and low cost. 
 
 # 5. Challenges
 
