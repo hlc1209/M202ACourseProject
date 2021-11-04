@@ -6,7 +6,49 @@ Designers have long recognized that handwritting with a pen offers more fluidity
 
 First, the cost of handwritten-enabled devices is high. Currently, multiple solutions exist for scribble digitization. For example, surface pro is built with a Wacom-made digitier layer and a pen made for it to acheive such functionality, which is rich in features but also costly. Other solutions like capacitive and bluetooth stylus have readily lower cost. Still, they can only work with devices with touchscreen enabled. Secondly, hardware support is relatively stringent. Most of the handwritten solutions for electronics does not generalize well to different devices and mainly focus on the need of high-end electronics. Also, if handwritten characters are used as input, the recognition of handwritten characters becomes the burden on the interfaced device. 
 
-To tackle the aforementioned problems, we propose to develop a low-cost device with a capacitive touchscreen that is able to recognize handwritten characters and send commands/keyboard strokes to bluetooth low energy (BLE) enabled devices. Such device is essentially a new type of human interface devices (HID) and able to work universally with any BLE enabled devices with minimum change in firmware. Since the handwritten recognition is done on this embedded device, there would be little hardware constraints for the interfaced devices except BLE capability. 
+To tackle the aforementioned problems, we propose to develop a low-cost and low-power device with a capacitive touchscreen that is able to recognize handwritten characters and send commands/keyboard strokes to bluetooth low energy (BLE) enabled devices. Such device is essentially a new type of human interface devices (HID) and able to work universally with any BLE enabled devices with minimum change in firmware. Since the handwritten recognition is done on this embedded device, there would be little hardware constraints for the interfaced devices except BLE capability. 
+
+# 2. State of the Art & Its Limitations
+
+# 3. Novelty & Rationale
+
+Compatibility is the main aspect that makes our proposed device stand out from other touchscreen solutions avaiable in the market. Nowadays, handwritten recognition solutions either work on selected devices or at-least touchscreen enabled high-end electronics. Also, the handwritten recognition algorithm of these devices typical requires the support from powerful processors. Our envisioned systems is built-in with a small touchscreen to collect handwritten inputs and infer the written characters on chip before sending out the commands/keyboard strokes. Therefore, it would be able to accommodate any BLE enabled devices. Such features allow more extendability of the device. 
+
+# 4. Potential Impact
+
+For instances, rather than a handwritting-to-text converter, this device can be used as the input terminal of voice synthesizer for 
+
+# 5. Challenges
+
+# 6. Requirement for Success
+
+To build such a system, the following skillsets and resources are needed.
+
+## Skillsets
+* Embedded system
+* Real-time operating system
+* Bluetooth Low Energy (BLE)
+* SPI and I2C
+* Electronics
+* Machine Learning and model compression
+
+## Skillsets potentially in need
+* PCB design
+* Mechenical Design
+
+## Hardware
+* Arduino Nano 33 BLE Sense
+* Adafruit 2.8" TFT Touch Shield v2 (capacitive touch)
+* Breadboard
+
+## Hardware potentially in need
+* Boost converter
+* 3d Printer
+
+# 7. Metrics of Success
+
+# 8. Execution Plan
+
 
 # 10. References
 
