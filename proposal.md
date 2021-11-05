@@ -10,7 +10,9 @@ To tackle the aforementioned problems, we propose to develop a low-cost and low-
 
 # 2. State of the Art & Its Limitations
 
-In 2018, 
+In 2018, Fernández et. al developed a real-time handwritten letter recognition system based on Raspberry Pi 3 using ConvNets which is able to acheive an accuracy of 93.4% and an average response time of 21.9 ms. This is the best performance of all similar systems that run the machine learning model offline considering accuracy, response, power consumption, and size. 
+
+However, limitations remain on this system and major improvement can be acheived on this type of system. First, the machine learning model used in this system can be further compressed with proper pruning, quantization, and other model compression techniques. Second, the power consumption and size of the system can be further reduced by replacing Raspberry Pi 3 by low-power microcontrollers. 
 
 # 3. Novelty & Rationale
 
@@ -86,6 +88,8 @@ The project can be partitioned into 5 mandatory tasks and 1 optional task:
 6. System packaging (Optional):
    Migrate the system from breadboard to a perfboard/PCB with proper power system if time allowed. Design a 3D-printed package to minimize the size of the entire system. 
 
+Yu Nong will be mainly responsible for task 1, 3, 5, 6 and Hanlong Chen will be mainly responsible for task 2, 3, 4, 6.
+
 The proposed timeline is the following.
 
 ## Week 1-2 (Oct. 4-17)
@@ -137,6 +141,14 @@ The proposed timeline is the following.
 * Evaluate the performance of the furnished system and compose the final report.
 * Update the project website with detail testing results, source code, and thorough documentation.
 * Prepare Zoom presentation. 
+
+# 9. Related Work
+
+## 9.a. Papers
+
+## 9.b. Datasets
+
+## 9.c. Software
 
 # 10. References
 
