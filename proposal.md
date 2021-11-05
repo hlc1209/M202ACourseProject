@@ -49,17 +49,24 @@ To build such a system, the following skillsets and resources are needed.
 
 # 7. Metrics of Success
 
+The successfulness of the project will be evaluated through the following metrics. 
+
+1. Accuracy:
+   Successful rate of recognitzing the written characters.
+
+2. Response time:
+   The time from a character is written to the inference is done.
+
+3. Power consumption:
+   The power consumption of the entire system.
+
+4. Weight:
+   The weight of the overall system.
+
+
 # 8. Execution Plan
 
-
-# 10. References
-
-D. Núñez Fernández and S. Hosseini, "Real-Time Handwritten Letters Recognition on an Embedded Computer Using ConvNets," 2018 IEEE Sciences and Humanities International Research Conference (SHIRCON), 2018, pp. 1-4, doi: 10.1109/SHIRCON.2018.8592981.
-
-
-# About & Contribution
-
-# Project Timeline
+The proposed timeline is the following.
 
 ## Week 1-2 (Oct. 4-17)
 
@@ -110,6 +117,12 @@ D. Núñez Fernández and S. Hosseini, "Real-Time Handwritten Letters Recognitio
 * Evaluate the performance of the furnished system and compose the final report.
 * Update the project website with detail testing results, source code, and thorough documentation.
 * Prepare Zoom presentation. 
+
+# 10. References
+
+D. Núñez Fernández and S. Hosseini, "Real-Time Handwritten Letters Recognition on an Embedded Computer Using ConvNets," 2018 IEEE Sciences and Humanities International Research Conference (SHIRCON), 2018, pp. 1-4, doi: 10.1109/SHIRCON.2018.8592981.
+
+
 
 
 # Literature Analysis
