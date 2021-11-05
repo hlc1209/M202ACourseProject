@@ -66,6 +66,26 @@ The successfulness of the project will be evaluated through the following metric
 
 # 8. Execution Plan
 
+The project can be partitioned into 5 mandatory tasks and 1 optional task:
+
+1. Development of the embedded system.
+   Interface the touchscreen to obtain handwritten characters properly. Develop BLE connection between Arduino Nano 33 BLE Sense and laptop. 
+
+2. Machine learning model development:
+   Develop and compress machine learning model to meet the accuracy and response time criteria with respect to the hardware constraint in static settings.
+
+3. System Integration:
+   Fully integrate the machine learning model with touchscreen and BLE function enabled. Ensure the real-time feature of the system. 
+
+4. Model Optimization:
+   Optimize the machine learning model to improve accuracy and reduce the run-time of the model. 
+
+5. System optimization:
+   Reduce the latency of the system and improve the user experience of the system.
+
+6. System packaging (Optional):
+   Migrate the system from breadboard to a perfboard/PCB with proper power system if time allowed. Design a 3D-printed package to minimize the size of the entire system. 
+
 The proposed timeline is the following.
 
 ## Week 1-2 (Oct. 4-17)
@@ -122,7 +142,7 @@ The proposed timeline is the following.
 
 D. Núñez Fernández and S. Hosseini, "Real-Time Handwritten Letters Recognition on an Embedded Computer Using ConvNets," 2018 IEEE Sciences and Humanities International Research Conference (SHIRCON), 2018, pp. 1-4, doi: 10.1109/SHIRCON.2018.8592981.
 
-
+Saldanha, Luca Bochi and Christophe Bobda. “An embedded system for handwritten digit recognition.” J. Syst. Archit. 61 (2015): 693-699.
 
 
 # Literature Analysis
