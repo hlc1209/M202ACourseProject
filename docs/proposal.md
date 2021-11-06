@@ -2,21 +2,32 @@
 
 # 1. Motivation & Objective
 
-Designers have long recognized that handwritting with a pen offers more fluidity compared with typing. After the keyboard has been the dominant input device for electronics for years, stylus pen comes into play as another commonly-used input device for electronics. While stylus pen becomes increasingly popular over the years, problems remain in this type of device, which could be turned into sizable market if properly solved. 
+Designers have long recognized that handwriting with a pen offers more fluidity compared with typing. After the keyboard has been the dominant input device for electronics for years, stylus pen comes into play as another commonly-used input device for electronics. While stylus pen becomes increasingly popular over the years, problems remain in this type of device, which could be turned into sizable market if properly solved. 
 
-First, the cost of handwritten-enabled devices is high. Currently, multiple solutions exist for scribble digitization. For example, surface pro is built with a Wacom-made digitier layer and a pen made for it to acheive such functionality, which is rich in features but also costly. Other solutions like capacitive and bluetooth stylus have readily lower cost. Still, they can only work with devices with touchscreen enabled. Secondly, hardware support is relatively stringent. Most of the handwritten solutions for electronics does not generalize well to different devices and mainly focus on the need of high-end electronics. Also, if handwritten characters are used as input, the recognition of handwritten characters becomes the burden on the interfaced device. 
+![](media/ipad_scribble.jpg)
 
-To tackle the aforementioned problems, we propose to develop a low-cost and low-power device with a capacitive touchscreen that is able to recognize handwritten characters and send commands/keyboard strokes to bluetooth low energy (BLE) enabled devices. Such device is essentially a new type of human interface devices (HID) and able to work universally with any BLE enabled devices with minimum change in firmware. Since the handwritten recognition is done on this embedded device, there would be little hardware constraints for the interfaced devices except BLE capability. 
+First, the cost of handwritten-enabled devices with a smooth experience is high. Currently, multiple solutions exist for scribble digitization. For example, Microsoft Surface Pro has a built-in Wacom-made digitier layer and a pen designed for it to achieve such functionality. Apple iPad introduced the scribble feature in iOS 14 with an extremely enhanced seamless handwriting input experience, but it requires the powerful computing power of the A14 chip and a separately sold apple pencil. Other solutions like capacitive and bluetooth stylus have readily lower cost. Still, they can only work with devices with touchscreen enabled and rely on hardware-specific optimized software to deliver a good experience. It is undeniably true that the vast majority of low-end devices offer a very poor handwriting experience.
+
+Secondly, hardware support is relatively stringent. Most of the handwritten solutions for electronics does not generalize well to different devices and mainly focus on the need of high-end electronics. Also, if handwritten characters are used as input, the recognition of handwritten characters becomes the burden on the interfaced device, placing demands on the system's software and hardware performance, increasing the system's complexity and reducing its reliability and real-time performance.
+
+To tackle the aforementioned problems, we propose to develop a low-cost and low-power device with a capacitive touchscreen that is able to offers a seamless handwriting input experience and send commands/keyboard strokes to bluetooth low energy (BLE) enabled devices as an alternative to conventional keyboard input. Such device is essentially a new type of human interface devices (HID) and able to work universally with any BLE enabled devices with minimum change in firmware. Since the handwritten recognition is done on this embedded device, there would be little hardware constraints for the interfaced devices except BLE capability. 
 
 # 2. State of the Art & Its Limitations
 
-In 2018, Fernández et. al developed a real-time handwritten letter recognition system based on Raspberry Pi 3 using ConvNets which is able to acheive an accuracy of 93.4% and an average response time of 21.9 ms. This is the best performance of all similar systems that run the machine learning model offline considering accuracy, response, power consumption, and size. 
+In 2018, Fernández et. al developed a real-time handwritten letter recognition system based on Raspberry Pi 3 using ConvNets which is able to achieve an accuracy of 93.4% and an average response time of 21.9 ms. This is the best performance of all similar systems that run the machine learning model offline considering accuracy, response, power consumption, and size. 
 
-However, limitations remain on this system and major improvement can be acheived on this type of system. First, the machine learning model used in this system can be further compressed with proper pruning, quantization, and other model compression techniques. Second, the power consumption and size of the system can be further reduced by replacing Raspberry Pi 3 by low-power microcontrollers. 
+However, limitations remain on this system and major improvement can be achieved on this type of system. First, the machine learning model used in this system can be further compressed with proper pruning, quantization, and other model compression techniques. Second, by replacing the Raspberry Pi 3 with a low-power microcontroller (i.e., the Arduino Nano 33 BLE Sense in our case), the power consumption and size of the system can be further reduced. Finally and most importantly, this article only demonstrates the feasibility of individual character recognition using deep learning networks in embedded systems, and does not illustrate the performance of handwriting recognition in real-world applications where efficiency, usability, and accuracy are extremely important.
+
+In 2019, Google Research uses recurrent neural network to enable seamless handwriting input on Android devices. Unlike traditional hand-designed heuristics to cut the handwritten input into single characters, Google build an RNN model that operates on the whole input. They convert a series of handwritten inputs into a sequence of Bessel curves that are fed into the RNN to get the actual written characters.
+
+Nevertheless, this powerful approach relies on strong chips on Android devices and even requires specially designed chips like Google Tensor with TPU cores to deliver smooth interactions, which is unacceptable in our project.
 
 # 3. Novelty & Rationale
 
-Compatibility is the main aspect that makes our proposed device stand out from other touchscreen solutions avaiable in the market. Nowadays, handwritten recognition solutions either work on selected devices or at-least touchscreen enabled high-end electronics. Also, the handwritten recognition algorithm of these devices typical requires the support from powerful processors. Our envisioned systems is built-in with a small touchscreen to collect handwritten inputs and infer the written characters on chip before sending out the commands/keyboard strokes. Therefore, it would be able to accommodate any BLE enabled devices. Such features allow more extendability of the device. 
+Compatibility is the main aspect that makes our proposed device stand out from other touchscreen solutions avaiable in the market. Nowadays, handwritten recognition solutions either work on selected devices or at-least touchscreen enabled high-end electronics, e.g., car infotainment system and Apple iPad. Also, the handwritten recognition algorithm of these devices typical requires the support from powerful processors. Our envisioned systems is built-in with a small touchscreen to collect handwritten inputs and infer the written characters on chip before sending out the commands/keyboard strokes. Therefore, it would be able to accommodate any BLE enabled devices. 
+
+
+Moreover, given the flexibility of handwritten input, unlike the keyboard whose keys can only accept single commands and require a large area for complex operations, our device enables fast execution of complex commands in a very small device volume by binding a custom character to a sequence of instructions. Simultaneously, the device has unlimited expansion possibilities, for example, performing calculations on handwritten numbers and symbols and transmitting the final results to the terminal equipment via BLE.
 
 # 4. Potential Impact
 
@@ -156,6 +167,9 @@ D. Núñez Fernández and S. Hosseini, "Real-Time Handwritten Letters Recognitio
 
 Saldanha, Luca Bochi and Christophe Bobda. “An embedded system for handwritten digit recognition.” J. Syst. Archit. 61 (2015): 693-699.
 
+Carbune, Victor, et al. "Fast multi-language LSTM-based online handwriting recognition." International Journal on Document Analysis and Recognition (IJDAR) 23.2 (2020): 89-102.
+
+Feuz, Sandro, and Pedro Gonnet. “RNN-Based Handwriting Recognition in Gboard.” Google AI Blog, 7 Mar. 2019, http://ai.googleblog.com/2019/03/rnn-based-handwriting-recognition-in.html. 
 
 # Literature Analysis
 
